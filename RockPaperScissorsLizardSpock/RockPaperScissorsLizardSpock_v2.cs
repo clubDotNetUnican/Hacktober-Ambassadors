@@ -52,7 +52,7 @@ namespace rockpaperscissoslizardspock
                 Console.WriteLine("\nComputer's turn");
                 Console.WriteLine("----------------------");
                 Console.WriteLine("Computer has done secretly. Obviously You're not able to see it now");
-                int computer_choice = rand.Next(1, 6);
+                int computer_choice = rand.Next(1, choice_names.Length+1);
 
 
                 //User choice
