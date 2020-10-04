@@ -1,3 +1,0 @@
-- [jotagarciaz](https://github.com/jotagarciaz)
-- [catherineprice ](https://github.com/catherineprice)
-- [itai192](https://github.com/itai192)
