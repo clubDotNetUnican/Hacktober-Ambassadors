@@ -60,7 +60,7 @@ namespace rockpaperscissoslizardspock
                 Console.WriteLine("--------------");
                 Console.WriteLine("Enter your choice: ");
                 int user_choice = Convert.ToInt32(Console.ReadLine());
-                while (user_choice > 5 || user_choice < 1) {
+                while (user_choice > choice_names.Length || user_choice < 1) {
                     Console.WriteLine("enter valid input:");
                     user_choice = Convert.ToInt32(Console.ReadLine());
                 }
