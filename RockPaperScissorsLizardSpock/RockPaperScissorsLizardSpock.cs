@@ -82,6 +82,7 @@ namespace RockPaperScissorsLizardSpock
 						checkingHasWon = true;
 					break;
 			}
+			
 			return checkingHasWon;
 		}
 	}
