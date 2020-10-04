@@ -57,32 +57,15 @@ namespace RockPaperScissorsLizardSpock
 		{
 			// Use games rules to compare checking selection to comparing selection
 			// The ints here correspond to options array indeces
+			const int NUMBEROFOPTIONS=5;
 			bool checkingHasWon = false;
-			
-			switch(checking)
-			{
-				case 0:
-					if(comparing == 2 || comparing == 3)
-						checkingHasWon = true;
-					break;
-				case 1:
-					if(comparing == 0 || comparing == 4)
-						checkingHasWon = true;
-					break;
-				case 2:
-					if(comparing == 1 || comparing == 3)
-						checkingHasWon = true;
-					break;
-				case 3:
-					if(comparing == 1 || comparing == 4)
-						checkingHasWon = true;
-					break;
-				case 4:
-					if(comparing == 0 || comparing == 2)
-						checkingHasWon = true;
-					break;
-			}
+			//to check if theyre the same
+			if(checking==comparing)
+				return false;
+			//to check if the amount of steps(in modulu of the amount of options) is even, if it is even, checking has won
+			checkingHasWon= ((comparing-checking+NUMBEROFOPTIONS)%NUMBEROFOPTIONS)%2==0;
 			return checkingHasWon;
 		}
+		
 	}
 }
