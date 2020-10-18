@@ -1,6 +1,6 @@
 /* Author: @eduherminio
- * Related blog post: https://eduherminio.github.io/blog/rock-paper-scissors/
- * Original source code: https://github.com/eduherminio/eduherminio.github.io/blob/master/code/2020-07-07-rock-paper-scissors/InteractiveRockPaperScissors/Program.cs
+ * Related blog post: https://eduherminio.github.io/blog/rock-paper-scissors-lizard-spock/
+ * Original source code: https://github.com/eduherminio/eduherminio.github.io/blob/master/code/2020-10-13-rock-paper-scissors-lizard-spock/RockPaperScissorsLizardSpock/Program.cs
  */
 
 using System;
@@ -8,7 +8,7 @@ using System.Linq;
 
 public static class Program
 {
-    private enum Item { Rock, Paper, Scissors }
+    private enum Item { Rock, Paper, Scissors, Spock, Lizard }
 
     private static readonly string[] ItemArray = Enum.GetNames(typeof(Item));
     private static readonly Random Rnd = new Random((int)DateTime.Now.Ticks & 0x0000FFFF);
